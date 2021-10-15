@@ -14,3 +14,19 @@ C:\Studia\3rok\C# i .NET\cw01\Witcher Negotiations\Witcher Negotiations\obj\Debu
 C:\Studia\3rok\C# i .NET\cw01\Witcher Negotiations\Witcher Negotiations\obj\Debug\net5.0\ref\Witcher Negotiations.dll
 C:\Studia\3rok\C# i .NET\cw01\Witcher Negotiations\Witcher Negotiations\obj\Debug\net5.0\Witcher Negotiations.pdb
 C:\Studia\3rok\C# i .NET\cw01\Witcher Negotiations\Witcher Negotiations\obj\Debug\net5.0\Witcher Negotiations.genruntimeconfig.cache
+D:\studia\3rok\dotNet-course\cw01\Witcher Negotiations\Witcher Negotiations\bin\Debug\net5.0\Witcher Negotiations.exe
+D:\studia\3rok\dotNet-course\cw01\Witcher Negotiations\Witcher Negotiations\bin\Debug\net5.0\Witcher Negotiations.deps.json
+D:\studia\3rok\dotNet-course\cw01\Witcher Negotiations\Witcher Negotiations\bin\Debug\net5.0\Witcher Negotiations.runtimeconfig.json
+D:\studia\3rok\dotNet-course\cw01\Witcher Negotiations\Witcher Negotiations\bin\Debug\net5.0\Witcher Negotiations.runtimeconfig.dev.json
+D:\studia\3rok\dotNet-course\cw01\Witcher Negotiations\Witcher Negotiations\bin\Debug\net5.0\Witcher Negotiations.dll
+D:\studia\3rok\dotNet-course\cw01\Witcher Negotiations\Witcher Negotiations\bin\Debug\net5.0\ref\Witcher Negotiations.dll
+D:\studia\3rok\dotNet-course\cw01\Witcher Negotiations\Witcher Negotiations\bin\Debug\net5.0\Witcher Negotiations.pdb
+D:\studia\3rok\dotNet-course\cw01\Witcher Negotiations\Witcher Negotiations\obj\Debug\net5.0\Witcher Negotiations.csproj.AssemblyReference.cache
+D:\studia\3rok\dotNet-course\cw01\Witcher Negotiations\Witcher Negotiations\obj\Debug\net5.0\Witcher Negotiations.GeneratedMSBuildEditorConfig.editorconfig
+D:\studia\3rok\dotNet-course\cw01\Witcher Negotiations\Witcher Negotiations\obj\Debug\net5.0\Witcher Negotiations.AssemblyInfoInputs.cache
+D:\studia\3rok\dotNet-course\cw01\Witcher Negotiations\Witcher Negotiations\obj\Debug\net5.0\Witcher Negotiations.AssemblyInfo.cs
+D:\studia\3rok\dotNet-course\cw01\Witcher Negotiations\Witcher Negotiations\obj\Debug\net5.0\Witcher Negotiations.csproj.CoreCompileInputs.cache
+D:\studia\3rok\dotNet-course\cw01\Witcher Negotiations\Witcher Negotiations\obj\Debug\net5.0\Witcher Negotiations.dll
+D:\studia\3rok\dotNet-course\cw01\Witcher Negotiations\Witcher Negotiations\obj\Debug\net5.0\ref\Witcher Negotiations.dll
+D:\studia\3rok\dotNet-course\cw01\Witcher Negotiations\Witcher Negotiations\obj\Debug\net5.0\Witcher Negotiations.pdb
+D:\studia\3rok\dotNet-course\cw01\Witcher Negotiations\Witcher Negotiations\obj\Debug\net5.0\Witcher Negotiations.genruntimeconfig.cache

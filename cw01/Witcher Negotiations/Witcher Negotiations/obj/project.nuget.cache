@@ -1,8 +1,10 @@
 {
   "version": 2,
-  "dgSpecHash": "w7fxf3mqrPuUOwe+mPhZnh8FsaUnuWY165trmxPi62pE4Q6XwN9althZTFA7l7lteOsJk2CEbX8CLpoRbDfppA==",
+  "dgSpecHash": "RHC9FTSejtq53xK/9c16+Yc/nXP4+JsBnNLBr77jEt6cVCMleQ4/bQCTioKrkTlVx3pVrHNV6ApohYoC3ZgfOg==",
   "success": true,
-  "projectFilePath": "C:\\Studia\\3rok\\dotNet-course\\cw01\\Witcher Negotiations\\Witcher Negotiations\\Witcher Negotiations.csproj",
-  "expectedPackageFiles": [],
+  "projectFilePath": "D:\\studia\\3rok\\dotNet-course\\cw01\\Witcher Negotiations\\Witcher Negotiations\\Witcher Negotiations.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\kubas\\.nuget\\packages\\microsoft.netcore.app.host.win-x64\\5.0.11\\microsoft.netcore.app.host.win-x64.5.0.11.nupkg.sha512"
+  ],
   "logs": []
 }

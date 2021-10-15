@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Text.RegularExpressions;
@@ -7,18 +8,58 @@ namespace Witcher_Negotiations
 {
     internal class Program
     {
-
         private class Hero
         {
+            public EHeroClass HeroClass { get; set; }
+
+            public string HeroName { get; set; }
+
             public Hero(string heroName, EHeroClass heroClass)
             {
                 HeroName = heroName;
                 HeroClass = heroClass;
             }
+        }
 
-            public EHeroClass HeroClass { get; set; }
+        private class NonPlayserCharacter
+        {
+            public string CharacterName { get; set; }
 
-            public string HeroName { get; set; }
+            public static NpcDialogPart StartTalking()
+            {
+                return new NpcDialogPart("First line", null);
+            }
+
+            public NonPlayserCharacter(string characterName)
+            {
+                CharacterName = characterName;
+            }
+        }
+
+        private class NpcDialogPart
+        {
+            public string Line { get; set; }
+
+            public List<HeroDialogPart> FollowingLines { get; set; }
+
+            public NpcDialogPart(string line, List<HeroDialogPart> followingLines)
+            {
+                Line = line;
+                FollowingLines = followingLines;
+            }
+        }
+
+        private class HeroDialogPart
+        {
+            public string Line { get; set; }
+
+            public NpcDialogPart FollowingLine { get; set; }
+
+            public HeroDialogPart(string line, NpcDialogPart followingLine)
+            {
+                Line = line;
+                FollowingLine = followingLine;
+            }
         }
 
         private class Game
@@ -155,13 +196,6 @@ namespace Witcher_Negotiations
                 Console.Clear();
                 Console.WriteLine("Select valid option");
                 Console.WriteLine("====================");
-            }
-
-            public void PrintHero()
-            {
-                Console.Clear();
-                Console.WriteLine("Your name is: " + _hero.HeroName);
-                Console.WriteLine("Your class is: " + _hero.HeroClass);
             }
 
             public void PrintWelcome()
