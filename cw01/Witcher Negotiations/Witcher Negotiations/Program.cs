@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Text.RegularExpressions;
@@ -7,18 +8,71 @@ namespace Witcher_Negotiations
 {
     internal class Program
     {
-
-        private class Hero
+        /*
+        private class NonPlayerCharacter
         {
-            public Hero(string heroName, EHeroClass heroClass)
+            public string Name { get; }
+
+            public NpcDialogPart StartTalking()
             {
-                HeroName = heroName;
-                HeroClass = heroClass;
+
             }
 
-            public EHeroClass HeroClass { get; set; }
 
-            public string HeroName { get; set; }
+
+            public NonPlayerCharacter(string name)
+            {
+                this.Name = name;
+            }
+        }
+
+        private class NpcDialogPart
+        {
+            public string Line { get; }
+            public List<HeroDialogPart> PossibleHeroDialogParts { get; }
+
+            public NpcDialogPart(string line, List<HeroDialogPart> possibleHeroDialogParts)
+            {
+                this.Line = line;
+                this.PossibleHeroDialogParts = possibleHeroDialogParts;
+            }
+        }
+
+        private class HeroDialogPart
+        {
+            public string Line { get; }
+            public NpcDialogPart FollowingNpcDialogPart { get; }
+
+            public HeroDialogPart(string line, NpcDialogPart followingNpcDialogPart)
+            {
+                this.Line = line;
+                this.FollowingNpcDialogPart = followingNpcDialogPart;
+            }
+        }
+
+        private class Dialogs
+        {
+            public HeroDialogPart[] HeroDialogParts { get; }
+            public NpcDialogPart[] NpcDialogParts { get; }
+
+
+            public Dialogs()
+            {
+                
+            }
+        }
+        */
+        private class Hero
+        {
+            public EHeroClass HeroClass { get; }
+
+            public string HeroName { get; }
+
+            public Hero(string heroName, EHeroClass heroClass)
+            {
+                this.HeroName = heroName;
+                this.HeroClass = heroClass;
+            }
         }
 
         private class Game
@@ -56,7 +110,7 @@ namespace Witcher_Negotiations
             private static Hero CreateHero()
             {
                 var heroName = "";
-                var heroClass = EHeroClass.Barbarian;
+                var heroClass = EHeroClass.Wolf;
 
                 var correctName = false;
                 var correctNameOption = true;
@@ -65,7 +119,7 @@ namespace Witcher_Negotiations
                 {
                     if (correctNameOption)
                     {
-                        Console.WriteLine("Choose a name for your hero:");
+                        Console.WriteLine("Choose a name for your Witcher:");
 
                         heroName = Console.ReadLine();
                         heroName = RemoveSpecialCharacters(heroName);
@@ -109,7 +163,7 @@ namespace Witcher_Negotiations
                 Console.Clear();
                 while (!correctClass)
                 {
-                    Console.WriteLine(heroName + " what is your class?");
+                    Console.WriteLine(heroName + " what is your school?");
                     var classes = (EHeroClass[])Enum.GetValues(typeof(EHeroClass));
                     var i = 0;
                     foreach (var clazz in classes)
@@ -157,17 +211,10 @@ namespace Witcher_Negotiations
                 Console.WriteLine("====================");
             }
 
-            public void PrintHero()
-            {
-                Console.Clear();
-                Console.WriteLine("Your name is: " + _hero.HeroName);
-                Console.WriteLine("Your class is: " + _hero.HeroClass);
-            }
-
             public void PrintWelcome()
             {
                 Console.Clear();
-                Console.WriteLine(_hero.HeroClass + " " + _hero.HeroName + " your adventure is beginning!");
+                Console.WriteLine(_hero.HeroName + " from the " + _hero.HeroClass + "'s school, your adventure is beginning!");
             }
         }
 
@@ -179,10 +226,16 @@ namespace Witcher_Negotiations
         }
     }
 
+    
+
     public enum EHeroClass
     {
-        Barbarian,
-        Paladin,
-        Amazon
+        Wolf,
+        Cat,
+        Griffin,
+        Bear,
+        Viper,
+        Manticore,
+        Crane
     }
 }
