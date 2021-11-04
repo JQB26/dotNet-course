@@ -1,0 +1,11 @@
+{
+  "Version": 1,
+  "ProjectMap": {
+    "fba4961f-9446-463b-91ae-2f2e0767f34a": {
+      "ProjectGuid": "fba4961f-9446-463b-91ae-2f2e0767f34a",
+      "DisplayName": "Parliament Simulator",
+      "ColorIndex": 0
+    }
+  },
+  "NextColorIndex": 1
+}

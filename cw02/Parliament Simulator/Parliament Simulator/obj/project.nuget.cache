@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "dgSpecHash": "4wLYbEfhMwFj9f3JnJmMgbLWwpneH+676GsYbmVpWkEl6RtZc2nqoLZiEoxUGGMYEawOwx+0XodaFfJtKOq26w==",
+  "success": true,
+  "projectFilePath": "D:\\studia\\3rok\\dotNet-course\\cw02\\Parliament Simulator\\Parliament Simulator\\Parliament Simulator.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\kubas\\.nuget\\packages\\microsoft.netcore.app.host.win-x64\\5.0.11\\microsoft.netcore.app.host.win-x64.5.0.11.nupkg.sha512"
+  ],
+  "logs": []
+}
