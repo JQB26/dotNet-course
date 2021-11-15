@@ -1,0 +1,16 @@
+C:\Studia\3rok\dotNet-course\cw03\Cw03\Cw03\bin\Debug\net5.0\Cw03.exe
+C:\Studia\3rok\dotNet-course\cw03\Cw03\Cw03\bin\Debug\net5.0\Cw03.deps.json
+C:\Studia\3rok\dotNet-course\cw03\Cw03\Cw03\bin\Debug\net5.0\Cw03.runtimeconfig.json
+C:\Studia\3rok\dotNet-course\cw03\Cw03\Cw03\bin\Debug\net5.0\Cw03.runtimeconfig.dev.json
+C:\Studia\3rok\dotNet-course\cw03\Cw03\Cw03\bin\Debug\net5.0\Cw03.dll
+C:\Studia\3rok\dotNet-course\cw03\Cw03\Cw03\bin\Debug\net5.0\ref\Cw03.dll
+C:\Studia\3rok\dotNet-course\cw03\Cw03\Cw03\bin\Debug\net5.0\Cw03.pdb
+C:\Studia\3rok\dotNet-course\cw03\Cw03\Cw03\obj\Debug\net5.0\Cw03.csproj.AssemblyReference.cache
+C:\Studia\3rok\dotNet-course\cw03\Cw03\Cw03\obj\Debug\net5.0\Cw03.GeneratedMSBuildEditorConfig.editorconfig
+C:\Studia\3rok\dotNet-course\cw03\Cw03\Cw03\obj\Debug\net5.0\Cw03.AssemblyInfoInputs.cache
+C:\Studia\3rok\dotNet-course\cw03\Cw03\Cw03\obj\Debug\net5.0\Cw03.AssemblyInfo.cs
+C:\Studia\3rok\dotNet-course\cw03\Cw03\Cw03\obj\Debug\net5.0\Cw03.csproj.CoreCompileInputs.cache
+C:\Studia\3rok\dotNet-course\cw03\Cw03\Cw03\obj\Debug\net5.0\Cw03.dll
+C:\Studia\3rok\dotNet-course\cw03\Cw03\Cw03\obj\Debug\net5.0\ref\Cw03.dll
+C:\Studia\3rok\dotNet-course\cw03\Cw03\Cw03\obj\Debug\net5.0\Cw03.pdb
+C:\Studia\3rok\dotNet-course\cw03\Cw03\Cw03\obj\Debug\net5.0\Cw03.genruntimeconfig.cache
