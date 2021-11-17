@@ -9,7 +9,8 @@ namespace Cw04
             // SquareGenerator sq = new SquareGenerator(Convert.ToInt32(Console.ReadLine()));
             // sq.PrintResults();
 
-
+            MatrixSum ms = new MatrixSum(4, 5);
+            ms.PrintMatrix();
         }
     }
 }
