@@ -11,9 +11,18 @@ namespace Cw04
         public MatrixSum(int n, int m)
         {
             Random random = new Random();
-            Matrix = Enumerable.Range(0, n).Select(i =>
-                Enumerable.Repeat(random.Next(), m).ToList()).ToList();
+            Matrix = Enumerable.Range(0, m).Select(i =>
+                Enumerable.Range(0, n).Select(j => random.Next(5000)).ToList()).ToList();
         }
+
+        public void SumAndPrintMatrix()
+        {
+            IEnumerable<int> mat = Matrix.SelectMany(p => p).ToList();
+            Console.WriteLine(mat.Sum());
+            Enumerable.Range(0, mat.Count()).Select(p => p);
+
+        }
+
 
         public void PrintMatrix()
         {

@@ -21,7 +21,14 @@ namespace Cw04
             Console.WriteLine("Number of elements: " + Squares.Count());
             Console.WriteLine("First element: " + Squares.First());
             Console.WriteLine("Last element: " + Squares.Last());
-            Console.WriteLine("The third element: " + Squares.ToList()[3]);
+            Console.WriteLine("The third element: " + Squares.ToList()[2]);
+
+            // test print
+            /*Console.Write("Elements: ");
+            foreach (var square in Squares)
+            {
+                Console.Write(Math.Sqrt(square) + ", ");
+            }*/
         }
 
     }
