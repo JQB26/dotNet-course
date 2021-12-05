@@ -18,9 +18,9 @@ namespace Cw04
         public void SumAndPrintMatrix()
         {
             IEnumerable<int> mat = Matrix.SelectMany(p => p).ToList();
-            Console.WriteLine(mat.Sum());
-            Enumerable.Range(0, mat.Count()).Select(p => p);
-
+            Console.WriteLine($"Matrix sum = {mat.Sum()}");
+            var lines = mat.Select(x => x.ToString());
+            Console.WriteLine($"Matrix elements:\n{string.Join(Environment.NewLine, lines)}");
         }
 
 
