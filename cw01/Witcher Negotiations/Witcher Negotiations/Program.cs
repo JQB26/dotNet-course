@@ -13,22 +13,25 @@ namespace Witcher_Negotiations
         {
             private Hero Hero { get; set; }
 
-            public Location(string locationName)
+            public bool IsUnlocked { get; set; }
+
+            public Location(string locationName, bool isUnlocked)
             {
                 LocationName = locationName;
                 NonPlayerCharacters = new List<NonPlayerCharacter>();
+                IsUnlocked = isUnlocked;
             }
 
             private List<NonPlayerCharacter> NonPlayerCharacters { get; }
 
-            private string LocationName { get; }
+            public string LocationName { get; }
 
             private static void TalkTo(NonPlayerCharacter npc, Hero hero)
             {
                 npc.StartTalking(hero);
             }
 
-            private void AddNpc(NonPlayerCharacter nonPlayerCharacter)
+            public void AddNpc(NonPlayerCharacter nonPlayerCharacter)
             {
                 NonPlayerCharacters.Add(nonPlayerCharacter);
             }
@@ -41,7 +44,7 @@ namespace Witcher_Negotiations
                 }
             }
 
-            public void PrintWelcome(Hero hero)
+            public bool PrintWelcome(Hero hero)
             {
                 Hero = hero;
                 var correctAction = false;
@@ -55,12 +58,18 @@ namespace Witcher_Negotiations
                         Console.WriteLine("[" + i + "] Talk to " + npc.Name);
                         i++;
                     }
+                    Console.WriteLine("[T] Travel");
                     Console.WriteLine("[X] Close the program");
 
                     var option = Console.ReadLine();
                     if (option == "X")
                     {
                         Environment.Exit(0);
+                    }
+
+                    if (option == "T")
+                    {
+                        return false;
                     }
                     for (var j = 0; j < i; j++)
                     {
@@ -75,6 +84,7 @@ namespace Witcher_Negotiations
                     }
                 }
 
+                return true;
             }
 
             private static void PrintSelectValidOption()
@@ -350,7 +360,27 @@ namespace Witcher_Negotiations
         {
             private static Hero _hero;
 
-            public Location Location { get; }
+            public static List<Location> Locations { get; set; }
+
+            public static Location CurrentLocation { get; set; }
+
+            public static IEnumerable<Location> PrintNextPossibleLocations()
+            {
+                Console.Clear();
+                var locations = Locations.Select(x => x)
+                    .Where(p => p.IsUnlocked && p != CurrentLocation)
+                    .OrderBy(p => p.LocationName).ToArray();
+                Console.WriteLine($"Where do you want to go?");
+                var i = 1;
+                foreach (var loc in locations)
+                {
+                    Console.WriteLine($"[{i}] {loc.LocationName}");
+                    i++;
+                }
+                Console.WriteLine($"[X] Powrót");
+
+                return locations;
+            }
 
             public void StartGame()
             {
@@ -490,16 +520,39 @@ namespace Witcher_Negotiations
                 Console.WriteLine(_hero.HeroName + " from the " + _hero.HeroClass + "'s school, your adventure is beginning!");
             }
 
-            public static void ShowLocation(Location location)
+            public static void ShowLocation(string loc)
             {
-                while (true)
+                var location = CurrentLocation;
+                foreach (var l in Locations)
+                {
+                    if (l.LocationName == loc)
+                    {
+                        location = l;
+                        CurrentLocation = l;
+                        break;
+                    }
+                }
+                Thread.Sleep(2000);
+                var isNextLocation = location.PrintWelcome(_hero);
+                while (isNextLocation)
                 {
                     Thread.Sleep(2000);
-                    location.PrintWelcome(_hero);
+                    isNextLocation = location.PrintWelcome(_hero);
+                }
+                var locations = PrintNextPossibleLocations().ToArray();
+
+                var option = Console.ReadLine();
+                if (option == "X")
+                {
+                    ShowLocation(loc);
+                }
+                else
+                {
+                    ShowLocation(locations[int.Parse(option) - 1].LocationName);
                 }
             }
 
-            private static List<NonPlayerCharacter> GenerateCharacters()
+            private static List<NonPlayerCharacter> GenerateCharacters0()
             {
                 var result = new List<NonPlayerCharacter>
                 {
@@ -509,10 +562,47 @@ namespace Witcher_Negotiations
                 return result;
             }
 
-            public Game(string locationName)
+            private static List<NonPlayerCharacter> GenerateCharacters1()
             {
-                Location = new Location(locationName);
-                Location.AddNpcs(GenerateCharacters());
+                var result = new List<NonPlayerCharacter>
+                {
+                    new("Old lady", 1, _hero),
+                    new("Bookmaker", 2, _hero)
+                };
+                return result;
+            }
+
+            private void GenerateLocations()
+            {
+                Locations = new List<Location>();
+
+                // starting location
+                CurrentLocation = new Location("White Orchard", true);
+                CurrentLocation.AddNpcs(GenerateCharacters0());
+                Locations.Add(CurrentLocation);
+
+                var velen = new Location("Velen", true);
+                velen.AddNpcs(GenerateCharacters1());
+                Locations.Add(velen);
+
+                var novigrad = new Location("Novigrad", true);
+                novigrad.AddNpc(new NonPlayerCharacter("Dijkstra", 1, _hero));
+                Locations.Add(novigrad);
+
+                var skellige = new Location("Skellige", true);
+                skellige.AddNpc(new NonPlayerCharacter("Crach an Craite", 2, _hero));
+                Locations.Add(skellige);
+
+                var kaerMorhen = new Location("Kaer Morhen valley", false);
+                Locations.Add(kaerMorhen);
+
+                var toussaint = new Location("Toussaint", false);
+                Locations.Add(toussaint);
+            }
+
+            public Game()
+            {
+                GenerateLocations();
                 _hero = new Hero("notSet", EHeroClass.Cat);
             }
 
@@ -520,10 +610,10 @@ namespace Witcher_Negotiations
 
         private static void Main()
         {
-            var game = new Game("Novigrad");
+            var game = new Game();
             game.StartGame();
             Game.PrintWelcome();
-            Game.ShowLocation(game.Location);
+            Game.ShowLocation("White Orchard");
         }
     }
 
