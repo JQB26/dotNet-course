@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Studia\\3rok\\dotNet-course\\cw05\\Simple Calculator\\Simple Calculator\\Simple Calculator.csproj": {}
+    "C:\\Studia\\3rok\\dotNet-course\\cw05\\Cw05\\StringConnector Test\\StringConnector Test.csproj": {}
   },
   "projects": {
-    "C:\\Studia\\3rok\\dotNet-course\\cw05\\Simple Calculator\\Simple Calculator\\Simple Calculator.csproj": {
+    "C:\\Studia\\3rok\\dotNet-course\\cw05\\Cw05\\StringConnector Test\\StringConnector Test.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Studia\\3rok\\dotNet-course\\cw05\\Simple Calculator\\Simple Calculator\\Simple Calculator.csproj",
-        "projectName": "Simple Calculator",
-        "projectPath": "C:\\Studia\\3rok\\dotNet-course\\cw05\\Simple Calculator\\Simple Calculator\\Simple Calculator.csproj",
+        "projectUniqueName": "C:\\Studia\\3rok\\dotNet-course\\cw05\\Cw05\\StringConnector Test\\StringConnector Test.csproj",
+        "projectName": "StringConnector Test",
+        "projectPath": "C:\\Studia\\3rok\\dotNet-course\\cw05\\Cw05\\StringConnector Test\\StringConnector Test.csproj",
         "packagesPath": "C:\\Users\\jakub\\.nuget\\packages\\",
-        "outputPath": "C:\\Studia\\3rok\\dotNet-course\\cw05\\Simple Calculator\\Simple Calculator\\obj\\",
+        "outputPath": "C:\\Studia\\3rok\\dotNet-course\\cw05\\Cw05\\StringConnector Test\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
@@ -42,6 +42,24 @@
       "frameworks": {
         "net5.0": {
           "targetAlias": "net5.0",
+          "dependencies": {
+            "Microsoft.NET.Test.Sdk": {
+              "target": "Package",
+              "version": "[16.9.4, )"
+            },
+            "NUnit": {
+              "target": "Package",
+              "version": "[3.13.1, )"
+            },
+            "NUnit3TestAdapter": {
+              "target": "Package",
+              "version": "[3.17.0, )"
+            },
+            "coverlet.collector": {
+              "target": "Package",
+              "version": "[3.0.2, )"
+            }
+          },
           "imports": [
             "net461",
             "net462",

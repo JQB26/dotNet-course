@@ -14,11 +14,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Studia\\3rok\\dotNet-course\\cw05\\Simple Calculator\\Simple Calculator\\Simple Calculator.csproj",
-      "projectName": "Simple Calculator",
-      "projectPath": "C:\\Studia\\3rok\\dotNet-course\\cw05\\Simple Calculator\\Simple Calculator\\Simple Calculator.csproj",
+      "projectUniqueName": "C:\\Studia\\3rok\\dotNet-course\\cw05\\Cw05\\Cw05\\Cw05.csproj",
+      "projectName": "Cw05",
+      "projectPath": "C:\\Studia\\3rok\\dotNet-course\\cw05\\Cw05\\Cw05\\Cw05.csproj",
       "packagesPath": "C:\\Users\\jakub\\.nuget\\packages\\",
-      "outputPath": "C:\\Studia\\3rok\\dotNet-course\\cw05\\Simple Calculator\\Simple Calculator\\obj\\",
+      "outputPath": "C:\\Studia\\3rok\\dotNet-course\\cw05\\Cw05\\Cw05\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"

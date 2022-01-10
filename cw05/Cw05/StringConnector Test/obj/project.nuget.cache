@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "7PwhQbUpcQjrjRtI+Awh/7x5z0tXyJk5GPoaOzgOuMzH/Us+1mxV3UUN/dAKXiUkfC9kH3M8rls7FF73r6SGqg==",
+  "dgSpecHash": "TgtJbbk4/9L/5ow3lu1h/BdUi4GZPR6Q4fU8r/IRX1EOz2OQmAkoESj8ZFLfeEfOE209id+4YLEmv0IHQQBc8A==",
   "success": true,
-  "projectFilePath": "C:\\Studia\\3rok\\dotNet-course\\cw05\\Simple Calculator\\Simple Calculator Test\\Simple Calculator Test.csproj",
+  "projectFilePath": "C:\\Studia\\3rok\\dotNet-course\\cw05\\Cw05\\StringConnector Test\\StringConnector Test.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\jakub\\.nuget\\packages\\coverlet.collector\\3.0.2\\coverlet.collector.3.0.2.nupkg.sha512",
     "C:\\Users\\jakub\\.nuget\\packages\\microsoft.codecoverage\\16.9.4\\microsoft.codecoverage.16.9.4.nupkg.sha512",

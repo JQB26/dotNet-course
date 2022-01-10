@@ -1253,16 +1253,6 @@
         "runtime": {
           "lib/netstandard1.3/System.Xml.XPath.XmlDocument.dll": {}
         }
-      },
-      "Simple Calculator/1.0.0": {
-        "type": "project",
-        "framework": ".NETCoreApp,Version=v5.0",
-        "compile": {
-          "bin/placeholder/Simple Calculator.dll": {}
-        },
-        "runtime": {
-          "bin/placeholder/Simple Calculator.dll": {}
-        }
       }
     }
   },
@@ -4902,11 +4892,6 @@
         "system.xml.xpath.xmldocument.4.3.0.nupkg.sha512",
         "system.xml.xpath.xmldocument.nuspec"
       ]
-    },
-    "Simple Calculator/1.0.0": {
-      "type": "project",
-      "path": "../Simple Calculator/Simple Calculator.csproj",
-      "msbuildProject": "../Simple Calculator/Simple Calculator.csproj"
     }
   },
   "projectFileDependencyGroups": {
@@ -4914,7 +4899,6 @@
       "Microsoft.NET.Test.Sdk >= 16.9.4",
       "NUnit >= 3.13.1",
       "NUnit3TestAdapter >= 3.17.0",
-      "Simple Calculator >= 1.0.0",
       "coverlet.collector >= 3.0.2"
     ]
   },
@@ -4925,11 +4909,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Studia\\3rok\\dotNet-course\\cw05\\Simple Calculator\\Simple Calculator Test\\Simple Calculator Test.csproj",
-      "projectName": "Simple Calculator Test",
-      "projectPath": "C:\\Studia\\3rok\\dotNet-course\\cw05\\Simple Calculator\\Simple Calculator Test\\Simple Calculator Test.csproj",
+      "projectUniqueName": "C:\\Studia\\3rok\\dotNet-course\\cw05\\Cw05\\StringConnector Test\\StringConnector Test.csproj",
+      "projectName": "StringConnector Test",
+      "projectPath": "C:\\Studia\\3rok\\dotNet-course\\cw05\\Cw05\\StringConnector Test\\StringConnector Test.csproj",
       "packagesPath": "C:\\Users\\jakub\\.nuget\\packages\\",
-      "outputPath": "C:\\Studia\\3rok\\dotNet-course\\cw05\\Simple Calculator\\Simple Calculator Test\\obj\\",
+      "outputPath": "C:\\Studia\\3rok\\dotNet-course\\cw05\\Cw05\\StringConnector Test\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
@@ -4948,11 +4932,7 @@
       "frameworks": {
         "net5.0": {
           "targetAlias": "net5.0",
-          "projectReferences": {
-            "C:\\Studia\\3rok\\dotNet-course\\cw05\\Simple Calculator\\Simple Calculator\\Simple Calculator.csproj": {
-              "projectPath": "C:\\Studia\\3rok\\dotNet-course\\cw05\\Simple Calculator\\Simple Calculator\\Simple Calculator.csproj"
-            }
-          }
+          "projectReferences": {}
         }
       },
       "warningProperties": {
