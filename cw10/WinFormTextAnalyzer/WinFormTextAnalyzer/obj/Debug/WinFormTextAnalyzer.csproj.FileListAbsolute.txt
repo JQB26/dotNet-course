@@ -1,0 +1,10 @@
+C:\Studia\3rok\dotNet-course\cw10\WinFormTextAnalyzer\WinFormTextAnalyzer\bin\Debug\WinFormTextAnalyzer.exe.config
+C:\Studia\3rok\dotNet-course\cw10\WinFormTextAnalyzer\WinFormTextAnalyzer\bin\Debug\WinFormTextAnalyzer.exe
+C:\Studia\3rok\dotNet-course\cw10\WinFormTextAnalyzer\WinFormTextAnalyzer\bin\Debug\WinFormTextAnalyzer.pdb
+C:\Studia\3rok\dotNet-course\cw10\WinFormTextAnalyzer\WinFormTextAnalyzer\obj\Debug\WinFormTextAnalyzer.csproj.AssemblyReference.cache
+C:\Studia\3rok\dotNet-course\cw10\WinFormTextAnalyzer\WinFormTextAnalyzer\obj\Debug\WinFormTextAnalyzer.Form1.resources
+C:\Studia\3rok\dotNet-course\cw10\WinFormTextAnalyzer\WinFormTextAnalyzer\obj\Debug\WinFormTextAnalyzer.Properties.Resources.resources
+C:\Studia\3rok\dotNet-course\cw10\WinFormTextAnalyzer\WinFormTextAnalyzer\obj\Debug\WinFormTextAnalyzer.csproj.GenerateResource.cache
+C:\Studia\3rok\dotNet-course\cw10\WinFormTextAnalyzer\WinFormTextAnalyzer\obj\Debug\WinFormTextAnalyzer.csproj.CoreCompileInputs.cache
+C:\Studia\3rok\dotNet-course\cw10\WinFormTextAnalyzer\WinFormTextAnalyzer\obj\Debug\WinFormTextAnalyzer.exe
+C:\Studia\3rok\dotNet-course\cw10\WinFormTextAnalyzer\WinFormTextAnalyzer\obj\Debug\WinFormTextAnalyzer.pdb
