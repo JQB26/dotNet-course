@@ -13,11 +13,12 @@ namespace WikipediaCrawler
             var results = new List<int>();
 
             var finder = new Finder("https://en.wikipedia.org/wiki/Elizabeth_II");
-            for (var i = 0; i < 2; i++)
+            for (var i = 0; i < 100; i++)
             {
                 finder.SetStartingPage("http://en.wikipedia.org/wiki/Special:Random");
-                results.Add(finder.Find());
-                Console.WriteLine($"{i} link was found");
+                var res = finder.Find();
+                results.Add(res);
+                Console.WriteLine($"{i+1} link was found: {res}");
             }
             
             Console.WriteLine("Final results are:");
