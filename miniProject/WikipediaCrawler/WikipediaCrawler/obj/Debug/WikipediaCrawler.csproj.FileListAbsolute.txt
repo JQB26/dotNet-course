@@ -1,0 +1,8 @@
+D:\studia\3rok\dotNet-course\miniProject\WikipediaCrawler\WikipediaCrawler\bin\Debug\WikipediaCrawler.exe.config
+D:\studia\3rok\dotNet-course\miniProject\WikipediaCrawler\WikipediaCrawler\bin\Debug\WikipediaCrawler.exe
+D:\studia\3rok\dotNet-course\miniProject\WikipediaCrawler\WikipediaCrawler\bin\Debug\WikipediaCrawler.pdb
+D:\studia\3rok\dotNet-course\miniProject\WikipediaCrawler\WikipediaCrawler\obj\Debug\WikipediaCrawler.csproj.AssemblyReference.cache
+D:\studia\3rok\dotNet-course\miniProject\WikipediaCrawler\WikipediaCrawler\obj\Debug\WikipediaCrawler.csproj.SuggestedBindingRedirects.cache
+D:\studia\3rok\dotNet-course\miniProject\WikipediaCrawler\WikipediaCrawler\obj\Debug\WikipediaCrawler.csproj.CoreCompileInputs.cache
+D:\studia\3rok\dotNet-course\miniProject\WikipediaCrawler\WikipediaCrawler\obj\Debug\WikipediaCrawler.exe
+D:\studia\3rok\dotNet-course\miniProject\WikipediaCrawler\WikipediaCrawler\obj\Debug\WikipediaCrawler.pdb
